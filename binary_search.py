@@ -1,3 +1,4 @@
+### Binary search algorithms O = log2n ###
 def binary_search(list, element):
     high = len(list) -1
     low = 0
@@ -15,6 +16,6 @@ def binary_search(list, element):
             attempt +=1  
     return f"{element} wasn't found"
 
-my_list = [1,2,3,4,5,6,7,8,9,10]
+my_list = range(128)
 
-print(binary_search(my_list, 5))
+print(binary_search(my_list, 127))
