@@ -1,4 +1,6 @@
-### Binary search algorithms O = log2n ###
+''' Binary search algorithms O(log2n) 
+    O - how fast algorithm works, how speed grow
+    '''
 def binary_search(list, element):
     high = len(list) -1
     low = 0

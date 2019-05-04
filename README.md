@@ -1,2 +1,3 @@
 # Algorithms
-algorithms with python
+
+Algorithms using python
