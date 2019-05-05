@@ -5,15 +5,13 @@ def length_1(array):
     return 1 + length_1(array[1:])
 
 # Tail recursion
-def length_2(array):
-    return length_3(array, 0)
 
-def length_3(array, acc):
+def length_2(array, acc=0):
     if array == []:
         return acc
     else :
         acc +=1 
-        return length_3(array[1:],acc)
+        return length_2(array[1:],acc)
 
 
 my_list = [1,2,3,4,5,6,7]
