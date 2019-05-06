@@ -24,5 +24,5 @@ def selecting_sort_2(array):
 
 my_list = [4,5,6,23,12,4,31,1,0]
 print(selecting_sort_2(my_list))
-#print(selecting_sort(my_list))
+print(selecting_sort(my_list))
 
