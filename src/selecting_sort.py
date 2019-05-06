@@ -13,18 +13,16 @@ def selecting_sort(array):
 # without creating an empty list
 def selecting_sort_2(array):
     for start_index in range(len(array)):
-        max = array[start_index]
+        max_index = start_index
         for i in range(start_index +1, len(array)):
-            if  array[i] > max:
-                max = array[i]
+            if  array[i] > array[start_index]:
                 max_index = i
+        print(array, start_index, max_index)
         array[start_index], array[max_index]= array[max_index], array[start_index]
     return array
                 
 
 my_list = [4,5,6,23,12,4,31,1,0]
-my_list2 = [4,5,6,23,12,4,31,1,0]
-print(selecting_sort(my_list))
-print(my_list)
-print(selecting_sort_2(my_list2))
+print(selecting_sort_2(my_list))
+#print(selecting_sort(my_list))
 
