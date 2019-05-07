@@ -7,9 +7,10 @@ def insertion_sort(array):
         item_to_insert = array[i]
         
         while i > 0 and array[i-1] < item_to_insert:
-            array[i],array[i-1] = array[i-1], array[i]
+            array[i] = array[i-1]
             i -= 1
             total +=1
+        array[i]= item_to_insert
     print(f'make {total} totals')
     return array
 
