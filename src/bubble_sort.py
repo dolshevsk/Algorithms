@@ -17,13 +17,11 @@ def cocktail_sort(array):
             if array[i] < array[i+1]:
                  array[i], array[i+1] = array[i+1], array[i]
         right -=1
-        print(f"after right -1 {array}")
 
         for i in range(right, left, -1):
             if array[i] > array[i-1]:
                  array[i], array[i-1] = array[i-1], array[i]
         left +=1
-        print(f"after left +1 {array}")
     return array
 
 
