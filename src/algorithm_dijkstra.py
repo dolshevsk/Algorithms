@@ -21,8 +21,9 @@ graph["d"]["finish"] = 1
 graph["finish"] = {}
 
 costs = {}
-costs["a"] = 5
-costs["b"] = 2
+costs["start"] = 0
+costs["a"] = float('inf')
+costs["b"] = float('inf')
 costs["c"] = float('inf')
 costs["d"] = float('inf')
 costs["finish"] = float('inf')
@@ -64,4 +65,7 @@ def find_lowest(costs):
 
 print(algotithm(costs))
 for x,y in parents.items():
+    print(x, y) 
+
+for x,y in costs.items():
     print(x, y) 
