@@ -19,5 +19,4 @@ def binary_search(list, element):
     return f"{element} wasn't found"
 
 my_list = range(128)
-
 print(binary_search(my_list, 127))
