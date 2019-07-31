@@ -80,6 +80,3 @@ def heap_sort_inplace(heap):
     for i in range(size,-1,-1):
         heap[0], heap[i] = heap[i], heap[0]
         sift_down(heap,0,i-1)
-
-
-
